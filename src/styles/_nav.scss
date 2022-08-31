@@ -1,0 +1,30 @@
+nav {
+    position: fixed;
+}
+
+.ellipse {
+    position: fixed;
+    top: 27px;
+    left: 25px;
+}
+
+#ellipse3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ellipse2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#ellipse1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

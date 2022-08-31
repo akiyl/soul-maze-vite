@@ -1,0 +1,42 @@
+.section2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.head1 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.line {
+    align-self: center;
+    width: 80px;
+    height: 3px;
+    background-color: red;
+}
+
+.profile1 {
+    display: flex;
+    padding: 120px;
+}
+
+.profile2 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 120px;
+    margin-bottom: 100px;
+}
+
+.profile1_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 30px;
+    font-size: 32px;
+    width: 300px;
+}
+
+.pic {
+    height: 400px;
+    width: 450px;
+}

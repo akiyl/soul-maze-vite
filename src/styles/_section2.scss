@@ -1,58 +1,59 @@
     .section2 {
-    display: flex;
-    flex-direction: column;
-}
-
-.head1 {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 40px;
-}
-
-.line {
-    align-self: center;
-    width: 80px;
-    height: 3px;
-    background-color: red;
-}
-
-.profile1 {
-    display: flex;
-    padding: 120px;
-}
-
-.profile2 {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 0 120px;
-    margin-bottom: 100px;
-}
-
-.profile1_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin: 30px;
-    font-size: 32px;
-    width: 300px;
-    font-weight: 700;
-}
-
-.pic {
-    height: 400px;
-    width: 450px;
-}
-
-@media screen and (max-width:700px) {
-    .profile1,
-    .profile2 {
-        padding: 25px;
+        display: flex;
         flex-direction: column;
     }
-    .pic {
-        height: 280px;
-        width: 300px;
+    
+    .head1 {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 40px;
     }
+    
+    .line {
+        align-self: center;
+        width: 80px;
+        height: 3px;
+        background-color: red;
+    }
+    
+    .profile1 {
+        display: flex;
+        padding: 120px;
+    }
+    
+    .profile2 {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 120px;
+        margin-bottom: 100px;
+    }
+    
     .profile1_text {
-        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 30px;
+        font-size: 32px;
+        width: 300px;
+        font-weight: 700;
+    }
+    
+    .pic {
+        height: 400px;
+        width: 450px;
+    }
+    
+    @media screen and (max-width:700px) {
+        .profile1,
+        .profile2 {
+            padding: 25px;
+            flex-direction: column;
+        }
+        .pic {
+            height: 280px;
+            width: 300px;
+        }
+        .profile1_text {
+            font-size: 24px;
+        }
     }

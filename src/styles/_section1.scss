@@ -4,8 +4,12 @@
         background-image: url(../../public/background.svg);
         background-size: cover;
         background-position: center;
-        height: 500px;
+        height: 650px;
         padding-bottom: 100px;
+    }
+    
+    main {
+        max-width: 1700px;
     }
     
     .main_img {
@@ -15,9 +19,9 @@
     }
     
     .main_img svg {
-        height: 330px;
+        height: 400px;
         position: absolute;
-        top: 80px;
+        top: 125px;
         right: 30px;
     }
     
@@ -34,6 +38,12 @@
         padding: 5px;
     }
     
+    @media screen and (max-width:1000px) {
+        .main_text {
+            font-size: 45px;
+        }
+    }
+    
     @media screen and (max-width:700px) {
         .main_text {
             font-size: 32px;
@@ -42,12 +52,6 @@
         .main_img svg {
             height: 250px;
             right: -225px;
-            top: 198px;
-        }
-    }
-    
-    @media screen and (max-width:1000px) {
-        .main_text {
-            font-size: 45px;
+            top: 350px;
         }
     }

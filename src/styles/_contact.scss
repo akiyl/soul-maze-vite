@@ -15,11 +15,12 @@
 
 .head2 {
     background-color: white;
-    font-size: 28px;
+    font-size: 40px;
     text-align: center;
-    width: 200px;
+    width: 300px;
     padding: 5px 10px;
     margin: 40px;
+    white-space: nowrap;
 }
 
 .contact_info {
@@ -48,9 +49,15 @@ textarea {
 }
 
 #phone {
-    position: absolute;
-    right: -4%;
-    top: 237%;
+    position: relative;
+    right: -10%;
+    top: 150px;
     height: 500px;
     width: 550px;
+}
+
+.post {
+    font-weight: 300;
+    white-space: nowrap;
+    margin-bottom: 20px;
 }

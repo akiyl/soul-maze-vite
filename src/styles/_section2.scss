@@ -7,25 +7,32 @@
         text-align: center;
         font-size: 40px;
         margin-top: 40px;
+        color: #F77F00;
+        text-transform: capitalize;
     }
     
     .line {
         align-self: center;
         width: 80px;
         height: 3px;
-        background-color: red;
+        background-color: #F77F00;
+        width: 200px;
+        height: 4px;
+        margin-top: 2px;
     }
     
     .profile1 {
         display: flex;
         padding: 120px;
+        padding: 120px;
+        margin: 75px 0;
     }
     
     .profile2 {
         display: flex;
         flex-direction: row-reverse;
         padding: 0 120px;
-        margin-bottom: 100px;
+        margin-bottom: 250px;
     }
     
     .profile1_text {
@@ -43,11 +50,35 @@
         width: 450px;
     }
     
+    #circle1 {
+        position: absolute;
+        top: 100%;
+        right: 66px;
+        z-index: -1;
+    }
+    
+    #circle2 {
+        position: absolute;
+        top: 167%;
+        left: 0px;
+        z-index: -1;
+    }
+    
     @media screen and (max-width:700px) {
         .profile1,
         .profile2 {
             padding: 25px;
             flex-direction: column;
+        }
+        #circle1 {
+            top: 91%;
+            right: 0px;
+            z-index: -1;
+            left: 60px;
+            height: 300px;
+        }
+        #circle2 {
+            top: 136%;
         }
         .pic {
             height: 280px;
@@ -55,5 +86,9 @@
         }
         .profile1_text {
             font-size: 24px;
+        }
+        .profile2 svg {
+            height: 280px;
+            width: 410px;
         }
     }

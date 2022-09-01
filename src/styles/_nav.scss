@@ -1,5 +1,7 @@
 nav {
     position: fixed;
+    z-index: 5;
+    background-color: white;
 }
 
 .ellipse {
@@ -27,4 +29,83 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#nav_content {
+    background-color: white;
+    width: 30vw;
+    height: 100vh;
+    padding: 50px;
+    font-size: 30px;
+    text-align: end;
+    line-height: 110px;
+}
+
+#nav_img {
+    height: 345px;
+    position: relative;
+    left: -100px;
+}
+
+#nav_button {
+    height: 0;
+}
+
+.red {
+    fill: #D62828;
+}
+
+.white {
+    stroke: white;
+}
+
+.hide {
+    display: none;
+}
+
+a {
+    color: #5893B1;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    /*   display: inline-block; */
+    padding: 15px 20px;
+    position: relative;
+}
+
+a::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #F77F00;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+a:hover::after {
+    width: 100%;
+    left: 0;
+    color: #003049;
+}
+
+a:hover {
+    color: #003049;
+}
+
+@media screen and (max-width:700px) {
+    #nav_content {
+        width: 100vw;
+        height: 30vh;
+        font-size: 24px;
+        text-align: center;
+        line-height: 60px;
+        padding: 0 0 80px 0;
+    }
+    #nav_img {
+        display: none;
+    }
 }

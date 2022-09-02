@@ -1,14 +1,41 @@
+import { animate } from "motion"
+
+// Animate via selector
+
+
 // import '../styles/style.scss'
 const navMenu = document.querySelector('#nav_button')
 
 const content = document.querySelector('#nav_content')
+const content2 = document.querySelector('.nav_black_screen')
 const polygon = document.querySelector('#polygon')
 const ellipse1 = document.querySelector('#path_elp1')
 const ellipse2 = document.querySelector('#path_elp2')
 const ellipse3 = document.querySelector('#path_elp3')
 const path = document.querySelector('#polygon')
+
+
+
+let open = false
+
 navMenu.addEventListener('click', () => {
-    content.classList.toggle('hide')
+
+    content2.classList.toggle('hide')
+
+    if (open == false) {
+        open = true
+
+        animate("nav", { opacity: [90, 100], x: [-300, 0] }, { duration: 0.2, easing: 'ease-out' })
+    } else {
+        open = false
+        animate("nav", { opacity: [100, 90], x: [0, -300] }, { duration: 0.2, easing: 'ease-out' })
+    }
+
+
+
+
+
+    // content2.classList.toggle('hide')
     if (path.classList === 'red') {
         path.classList.remove('red')
     }

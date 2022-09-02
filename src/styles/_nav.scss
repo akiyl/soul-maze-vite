@@ -1,7 +1,9 @@
 nav {
     position: fixed;
-    z-index: 5;
+    z-index: 15;
     background-color: white;
+    transform: translateX(-300px);
+    font-family: 'MADE Soulmaze Regular';
 }
 
 .ellipse {
@@ -33,22 +35,25 @@ nav {
 
 #nav_content {
     background-color: white;
+    position: relative;
     width: 30vw;
     height: 100vh;
     padding: 50px;
     font-size: 30px;
     text-align: end;
-    line-height: 110px;
+    line-height: 100px;
 }
 
 #nav_img {
     height: 345px;
-    position: relative;
-    left: -100px;
+    position: absolute;
+    left: -65px;
+    bottom: 0px;
 }
 
 #nav_button {
-    height: 0;
+    position: fixed;
+    z-index: 20;
 }
 
 .red {
@@ -59,10 +64,11 @@ nav {
     stroke: white;
 }
 
-.hide {
-    display: none;
-}
-
+// .hide {
+//     display: none;
+//     transform: scaleX(1.1);
+//     transition: all 0.3s ease-in-out;
+// }
 a {
     color: #5893B1;
     text-transform: uppercase;
@@ -108,4 +114,21 @@ a:hover {
     #nav_img {
         display: none;
     }
+}
+
+.nav_black_screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0004;
+    z-index: 10;
+    opacity: 100%;
+    transition: all 0.2s linear;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
 }

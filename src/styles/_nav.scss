@@ -2,7 +2,7 @@ nav {
     position: fixed;
     z-index: 15;
     background-color: white;
-    transform: translateX(-300px);
+    transform: translateX(-30vw);
     font-family: 'MADE Soulmaze Regular';
 }
 
@@ -103,9 +103,12 @@ a:hover {
 }
 
 @media screen and (max-width:700px) {
+    nav {
+        transform: translateX(-100vw);
+    }
     #nav_content {
         width: 100vw;
-        height: 30vh;
+        height: 40vh;
         font-size: 24px;
         text-align: center;
         line-height: 60px;

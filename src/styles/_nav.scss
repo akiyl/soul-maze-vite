@@ -4,16 +4,17 @@ nav {
     background-color: white;
     transform: translateX(-30vw);
     font-family: 'MADE Soulmaze Regular';
-    #nav_content {
-        background-color: white;
-        position: relative;
-        width: 30vw;
-        height: 100vh;
-        padding: 50px;
-        font-size: 30px;
-        text-align: end;
-        line-height: 90px;
-    }
+}
+
+#nav_content {
+    background-color: white;
+    position: relative;
+    width: 30vw;
+    height: 100vh;
+    padding: 50px;
+    font-size: 30px;
+    text-align: end;
+    line-height: 90px;
 }
 
 #nav_button {

@@ -27,10 +27,10 @@ navMenu.addEventListener('click', () => {
         if (open == false) {
             open = true
 
-            animate("nav", { opacity: [90, 100], y: ['-100vw', '0vw'] }, { duration: 0.2, easing: 'ease-out' })
+            animate("nav", { opacity: [90, 100], x: ['-100vw', '0vw'] }, { duration: 0.2, easing: 'ease-out' })
         } else {
             open = false
-            animate("nav", { opacity: [100, 90], y: ['0vw', '-100vw'] }, { duration: 0.2, easing: 'ease-out' })
+            animate("nav", { opacity: [100, 90], x: ['0vw', '-100vw'] }, { duration: 0.2, easing: 'ease-out' })
         }
     } else {
         if (open == false) {

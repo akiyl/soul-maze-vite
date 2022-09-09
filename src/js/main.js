@@ -22,25 +22,26 @@ navMenu.addEventListener('click', () => {
 
     content2.classList.toggle('hide')
 
-    if (open == false) {
-        open = true
+    if (window.matchMedia("(max-width:700px)")) {
+        console.log("fuck")
+        if (open == false) {
+            open = true
 
-        animate("nav", { opacity: [90, 100], x: ['-30vw', '0vw'] }, { duration: 0.2, easing: 'ease-out' })
+            animate("nav", { opacity: [90, 100], x: ['-100vw', '0vw'] }, { duration: 0.2, easing: 'ease-out' })
+        } else {
+            open = false
+            animate("nav", { opacity: [100, 90], x: ['0vw', '-100vw'] }, { duration: 0.2, easing: 'ease-out' })
+        }
     } else {
-        open = false
-        animate("nav", { opacity: [100, 90], x: ['0vw', '-30vw'] }, { duration: 0.2, easing: 'ease-out' })
+        if (open == false) {
+            open = true
+
+            animate("nav", { opacity: [90, 100], x: ['-30vw', '0vw'] }, { duration: 0.2, easing: 'ease-out' })
+        } else {
+            open = false
+            animate("nav", { opacity: [100, 90], x: ['0vw', '-30vw'] }, { duration: 0.2, easing: 'ease-out' })
+        }
     }
-    // if (window.matchMedia("(max-width:700px)")) {
-    //     if (open == false) {
-    //         open = true
-
-    //         animate("nav", { opacity: [90, 100], x: ['-100vw', '0vw'] }, { duration: 0.2, easing: 'ease-out' })
-    //     } else {
-    //         open = false
-    //         animate("nav", { opacity: [100, 90], x: ['0vw', '-100vw'] }, { duration: 0.2, easing: 'ease-out' })
-    //     }
-    // }
-
 
 
 

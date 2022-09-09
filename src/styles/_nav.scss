@@ -4,44 +4,50 @@ nav {
     background-color: white;
     transform: translateX(-30vw);
     font-family: 'MADE Soulmaze Regular';
+    #nav_content {
+        background-color: white;
+        position: relative;
+        width: 30vw;
+        height: 100vh;
+        padding: 50px;
+        font-size: 30px;
+        text-align: end;
+        line-height: 90px;
+    }
 }
 
-.ellipse {
+#nav_button {
     position: fixed;
-    top: 27px;
-    left: 25px;
-}
-
-#ellipse3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#ellipse2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#ellipse1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#nav_content {
-    background-color: white;
-    position: relative;
-    width: 30vw;
-    height: 100vh;
-    padding: 50px;
-    font-size: 30px;
-    text-align: end;
-    line-height: 100px;
+    z-index: 20;
+    .ellipse {
+        position: fixed;
+        top: 27px;
+        left: 25px;
+        animation: rotate 2s infinite ease;
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        #ellipse3 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #ellipse2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #ellipse1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
 }
 
 #nav_img {
@@ -49,11 +55,6 @@ nav {
     position: absolute;
     left: -65px;
     bottom: 0px;
-}
-
-#nav_button {
-    position: fixed;
-    z-index: 20;
 }
 
 .red {
